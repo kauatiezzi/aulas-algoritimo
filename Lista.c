@@ -188,3 +188,38 @@ void main() {
 
 
 }
+
+Exercicio 15 
+
+#include <stdio.h>
+
+int main() {
+
+    int i, j, k, soma, soma1;
+
+    for(i=1;i<=10000; i++) {
+
+        soma = 0;
+
+        for(j=1; j<i; j++) {
+            if (i % j == 0)
+                soma = soma + j;
+        }
+
+        printf("soma = %d", soma);
+        soma1 = 0;
+
+        for(k=1;k<soma;k++){
+            if (soma % k == 0)
+                soma1 = soma1 + k;
+        }
+
+        if (i == soma1)
+            printf("%d %d", soma, soma1);
+
+    }
+
+
+
+    return 0;
+}
