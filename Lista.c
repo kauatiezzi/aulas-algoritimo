@@ -186,6 +186,37 @@ void main() {
      printf("Quantidade de meninas com 17 anos = %lf", x);
 
 
+EXERCICIO 06
+
+void main() {
+
+    float salario, r1 = 1.20, r2 = 1.15, r3 = 1.10;
+
+    do {
+
+        printf("Digite o valor do salario:\n");
+        scanf("%f", &salario);
+
+        if(salario == 0) return 0;
+        if(salario <=200) {
+    
+
+            salario = salario * r1;
+        } else if (salario <=500) {
+
+            salario = salario * r2;
+        } else
+            salario = salario * r3;
+
+        printf("O salario e de: R$ %.2f\n", salario);
+
+    } while(salario > 0);
+
+
+
+}
+
+
 
 }
 
